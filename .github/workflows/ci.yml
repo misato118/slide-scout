@@ -53,9 +53,9 @@ jobs:
 
       - name: Ruff check
         working-directory: backend
-        run: ruff check ./src ./main.py
+        run: ruff check ./app
 
       - name: Mypy check
         working-directory: backend
-        run: mypy ./src ./main.py --ignore-missing-imports
+        run: mypy ./app --ignore-missing-imports
 
